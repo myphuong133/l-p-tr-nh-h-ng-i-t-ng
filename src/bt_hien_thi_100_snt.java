@@ -1,11 +1,11 @@
 import java.util.Scanner;
 
-public class hien_thi_20_snt {
+public class bt_hien_thi_100_snt {
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        System.out.println("Nhập số lượng snt cần in");
+        System.out.println("Số snt dưới 100 là");
         int number,count = 0,i,numberCheck = 0;
-        number = sc.nextInt();
+        number = 25;
         boolean isNumberElement = false;
         String result = "";
         while (count < number){
@@ -18,14 +18,13 @@ public class hien_thi_20_snt {
             numberCheck++;
         }
 
-      System.out.println(result);
-
+        System.out.println(result);
 
 
     }
     public static boolean checkNumberElement(int x){
         boolean isNumberElement = false;
-        if (x == 2){
+        if (x==2){
             isNumberElement = true;
         }
 
@@ -43,3 +42,4 @@ public class hien_thi_20_snt {
         return isNumberElement;
     }
 }
+
